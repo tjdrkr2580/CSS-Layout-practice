@@ -6,29 +6,33 @@
   text-decoration: none;
 }
 
-body {
-  background: black;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 300px);
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
 }
 
-.flexbox {
-  display: flex;
-  justify-content: space-around;
-  height: 100vh;
+.header {
+  background: red;
+  grid-area: header;
 }
 
-.child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 4rem;
-  width: 300px;
-  height: 200px;
-  border: 1px solid white;
-  background-color: blue;
+.content {
+  background: orange;
+  grid-area: content;
 }
 
-.child:nth-child(2) {
+.nav {
   background: yellow;
-  flex-grow: 1;
+  grid-area: nav;
+}
+
+.footer {
+  background: green;
+  grid-area: footer;
 }

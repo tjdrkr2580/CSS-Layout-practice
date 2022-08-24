@@ -12,11 +12,21 @@ body {
 
 .flexbox {
   display: flex;
+  justify-content: space-around;
+  height: 200vh;
 }
 
-.box {
+.child {
   width: 200px;
   height: 200px;
   border: 1px solid white;
   background-color: blue;
+}
+
+.child:nth-child(2) {
+  align-self: center;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
 }

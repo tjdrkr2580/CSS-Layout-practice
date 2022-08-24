@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+
+// font-family: 'Aboreto', cursive 400;
+// font-family: 'Source Sans Pro', sans-serif 200 300 400 600;
+
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  .left_wrapper {
+    padding-left: 78px;
+    font-family: "Source Sans Pro";
+    display: inline-block;
+    border: 1px solid black;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 33vw;
+
+    h1 {
+      font-size: 5rem;
+      letter-spacing: 0.35rem;
+      color: #e7473c;
+      font-family: "Aboreto";
+    }
+
+    .text-wrapper {
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      span {
+        letter-spacing: 0.03rem;
+        color: #e7473c;
+        font-size: 1.5rem;
+      }
+
+      .sentense_first {
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        font-size: 1rem;
+        color: #e7473c;
+      }
+
+      .hrefs {
+        a {
+          font-weight: 600;
+          text-decoration: underline;
+          text-underline-position: under;
+          display: inline-block;
+          font-size: 1rem;
+          color: #60607b;
+          &:hover {
+            color: black;
+          }
+        }
+
+        .href_first {
+          display: flex;
+          gap: 12px;
+          margin-bottom: 0.5rem;
+        }
+        .href_second {
+          display: flex;
+          gap: 12px;
+        }
+      }
+
+      .sentense_second {
+        font-size: 0.75rem;
+        color: gray;
+      }
+    }
+  }
+
+  .right_wrapper {
+    position: absolute;
+    right: 0;
+    width: calc(100vw - 33vw);
+
+    .movie {
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1) 1%,
+          transparent,
+          transparent,
+          transparent,
+          transparent
+        )
+        #e7473c;
+      width: 100%;
+
+      .movie_wrapper {
+        margin: 0 auto;
+        width: 70%;
+      }
+      .movie_title {
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 1.2rem;
+        h1 {
+          margin-top: 3rem;
+          display: inline-block;
+          font-size: 2.7rem;
+        }
+        p {
+          font-weight: 700;
+          align-self: flex-end;
+          display: inline-block;
+        }
+        margin-bottom: 1rem;
+      }
+      img {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      .movie_texts {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        .desc {
+          font-family: Source Sans Pro;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          p {
+            font-size: 1.3rem;
+            font-weight: bold;
+          }
+          .movie_rank {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        span {
+          color: #831d16;
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+      }
+      .movie_footer {
+        align-items: center;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 5rem;
+        span {
+          color: #831d16;
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
+        a {
+          color: #831d16;
+          font-weight: 700;
+          font-size: 1.15rem;
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+      }
+    }
+  }
+}

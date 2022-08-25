@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Karla:wght@200&family=Nanum+Myeongjo&family=Oooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Karla&family=Nanum+Myeongjo&family=Oooh+Baby&display=swap");
 * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,5 +13,207 @@
 }
 
 a {
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  color: black;
+}
+a:hover {
+  color: rgb(199, 199, 199);
+}
+
+.container {
+  height: 500vh;
+}
+.container .header-wrapper {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 144px;
+}
+.container .header-wrapper .header-fixed-wrapper {
+  background-color: white;
+  padding: 0 180px 0 180px;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+.container .header-wrapper .header-fixed-wrapper h1 {
+  font-family: "Aboreto", cursive;
+  font-size: 3.5rem;
+}
+.container .header-wrapper .header-fixed-wrapper li {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.container .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  position: relative;
+  width: 100vw;
+  padding: 0 180px 0 180px;
+}
+.container .main-wrapper .power-couple {
+  position: relative;
+}
+.container .main-wrapper .power-couple img {
+  filter: brightness(75%);
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 950px;
+}
+.container .main-wrapper .power-couple .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.container .main-wrapper .power-couple .texts .topic {
+  margin-bottom: 1rem;
   color: white;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  letter-spacing: 0.1rem;
+}
+.container .main-wrapper .power-couple .texts .desc {
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: "Aboreto", cursive;
+}
+.container .main-wrapper .power-couple .texts button {
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  width: 200px;
+  height: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Nanum Myeongjo", serif;
+  transition: 0.4s;
+}
+.container .main-wrapper .power-couple .texts button:hover {
+  background: white;
+  color: black;
+}
+.container .main-wrapper .power-couple .texts button:active {
+  transform: scale(0.98);
+}
+.container .main-wrapper .bag {
+  background: #fbf7f6;
+  display: flex;
+}
+.container .main-wrapper .bag .bag-text-wrapper {
+  width: 50%;
+  position: relative;
+}
+.container .main-wrapper .bag .bag-text-wrapper .texts {
+  gap: 5.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container .main-wrapper .bag .bag-text-wrapper .texts .desc {
+  width: 60%;
+  font-family: "Aboreto", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+.container .main-wrapper .bag .bag-text-wrapper .texts button {
+  cursor: pointer;
+  color: black;
+  border: 1px solid gray;
+  background: transparent;
+  width: 200px;
+  height: 50px;
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Nanum Myeongjo", serif;
+  transition: 0.4s;
+}
+.container .main-wrapper .bag .bag-text-wrapper .texts button:hover {
+  background: gray;
+  color: white;
+}
+.container .main-wrapper .bag .bag-text-wrapper .texts button:active {
+  transform: scale(0.98);
+}
+.container .main-wrapper .bag img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+}
+.container .main-wrapper .studio {
+  background: #fbf7f6;
+  display: flex;
+}
+.container .main-wrapper .studio .studio-text-wrapper {
+  width: 50%;
+  position: relative;
+}
+.container .main-wrapper .studio .studio-text-wrapper .texts {
+  gap: 5.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container .main-wrapper .studio .studio-text-wrapper .texts .small-text {
+  letter-spacing: 0.1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+}
+.container .main-wrapper .studio .studio-text-wrapper .texts .desc {
+  width: 60%;
+  font-family: "Aboreto", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+.container .main-wrapper .studio .studio-text-wrapper .texts button {
+  cursor: pointer;
+  color: black;
+  border: 1px solid gray;
+  background: transparent;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Nanum Myeongjo", serif;
+  transition: 0.4s;
+}
+.container .main-wrapper .studio .studio-text-wrapper .texts button:hover {
+  background: gray;
+  color: white;
+}
+.container .main-wrapper .studio .studio-text-wrapper .texts button:active {
+  transform: scale(0.98);
+}
+.container .main-wrapper .studio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

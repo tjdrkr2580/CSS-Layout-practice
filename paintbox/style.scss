@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Karla:wght@200&family=Nanum+Myeongjo&family=Oooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Karla&family=Nanum+Myeongjo&family=Oooh+Baby&display=swap");
 
 $font-Aboreto: "Aboreto", cursive;
 $font-Karla: "Karla", sans-serif;
 $font-Myeongjo: "Nanum Myeongjo", serif;
 $font-Oooh: "Oooh Baby", cursive;
-
-$block-color: #f3ede8;
+$padding: 0 180px 0 180px;
+$block-color: #fbf7f6;
 $block-color-blue: #dee8e9;
 
 * {
+  user-select: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,5 +19,207 @@ $block-color-blue: #dee8e9;
 }
 
 a {
-  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  font-family: $font-Karla;
+  color: black;
+  &:hover {
+    color: rgb(199, 199, 199);
+  }
+}
+
+.container {
+  height: 500vh;
+  .header-wrapper {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 144px;
+    .header-fixed-wrapper {
+      background-color: white;
+      padding: $padding;
+      height: 70px;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100vw;
+      h1 {
+        font-family: $font-Aboreto;
+        font-size: 3.5rem;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+  }
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    position: relative;
+    width: 100vw;
+    padding: $padding;
+
+    .power-couple {
+      position: relative;
+      img {
+        filter: brightness(75%);
+        object-fit: fill;
+        width: 100%;
+        height: 950px;
+      }
+      .texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        .topic {
+          margin-bottom: 1rem;
+          color: white;
+          font-size: 1.2rem;
+          font-family: $font-Karla;
+          letter-spacing: 0.1rem;
+        }
+        .desc {
+          color: white;
+          font-size: 4.5rem;
+          text-align: center;
+          font-family: $font-Aboreto;
+        }
+        button {
+          cursor: pointer;
+          color: white;
+          border: 1px solid white;
+          background: transparent;
+          width: 200px;
+          height: 50px;
+          font-size: 1.1rem;
+          letter-spacing: 0.15rem;
+          font-family: $font-Myeongjo;
+          transition: 0.4s;
+          &:hover {
+            background: white;
+            color: black;
+          }
+          &:active {
+            transform: scale(0.98);
+          }
+        }
+      }
+    }
+    .bag {
+      background: $block-color;
+      display: flex;
+
+      .bag-text-wrapper {
+        width: 50%;
+        position: relative;
+        .texts {
+          gap: 5.5rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          .desc {
+            width: 60%;
+            font-family: $font-Aboreto;
+            font-size: 2.5rem;
+            letter-spacing: 0.1rem;
+          }
+          button {
+            cursor: pointer;
+            color: black;
+            border: 1px solid gray;
+            background: transparent;
+            width: 200px;
+            height: 50px;
+            font-size: 1.1rem;
+            letter-spacing: 0.15rem;
+            font-family: $font-Myeongjo;
+            transition: 0.4s;
+            &:hover {
+              background: gray;
+              color: white;
+            }
+            &:active {
+              transform: scale(0.98);
+            }
+          }
+        }
+      }
+      img {
+        object-fit: cover;
+        width: 50%;
+      }
+    }
+    .studio {
+      background: $block-color;
+      display: flex;
+
+      .studio-text-wrapper {
+        width: 50%;
+        position: relative;
+        .texts {
+          gap: 5.5rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          .small-text {
+            letter-spacing: 0.1rem;
+            font-family: $font-Karla;
+            font-size: 1.2rem;
+          }
+          .desc {
+            width: 60%;
+            font-family: $font-Aboreto;
+            font-size: 2.5rem;
+            letter-spacing: 0.1rem;
+          }
+          button {
+            cursor: pointer;
+            color: black;
+            border: 1px solid gray;
+            background: transparent;
+            width: 200px;
+            height: 50px;
+            font-size: 1rem;
+            letter-spacing: 0.15rem;
+            font-family: $font-Myeongjo;
+            transition: 0.4s;
+            &:hover {
+              background: gray;
+              color: white;
+            }
+            &:active {
+              transform: scale(0.98);
+            }
+          }
+        }
+      }
+      img {
+        object-fit: cover;
+        width: 50%;
+      }
+    }
+  }
 }

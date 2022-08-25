@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Karla:wght@200&family=Nanum+Myeongjo&family=Oooh+Baby&display=swap");
+
+$font-Aboreto: "Aboreto", cursive;
+$font-Karla: "Karla", sans-serif;
+$font-Myeongjo: "Nanum Myeongjo", serif;
+$font-Oooh: "Oooh Baby", cursive;
+
+$block-color: #f3ede8;
+$block-color-blue: #dee8e9;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
+}

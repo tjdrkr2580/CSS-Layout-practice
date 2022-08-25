@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Karla:wght@200&family=Nanum+Myeongjo&family=Oooh+Baby&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

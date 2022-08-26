@@ -28,7 +28,7 @@ a:hover {
 .container .header-wrapper {
   z-index: 999;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   width: 100vw;
   height: 144px;
@@ -44,6 +44,7 @@ a:hover {
   width: 100vw;
 }
 .container .header-wrapper .header-fixed-wrapper h1 {
+  cursor: pointer;
   font-family: "Aboreto", cursive;
   font-size: 3.5rem;
 }
@@ -216,4 +217,70 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   width: 50%;
+}
+.container .main-wrapper .gift {
+  background: #fbf7f6;
+  display: flex;
+}
+.container .main-wrapper .gift .gift-text-wrapper {
+  background: #dee8e9;
+  width: 50%;
+  position: relative;
+}
+.container .main-wrapper .gift .gift-text-wrapper .texts {
+  gap: 5.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container .main-wrapper .gift .gift-text-wrapper .texts .small-text {
+  letter-spacing: 0.1rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+}
+.container .main-wrapper .gift .gift-text-wrapper .texts .desc {
+  width: 60%;
+  font-family: "Aboreto", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+.container .main-wrapper .gift .gift-text-wrapper .texts button {
+  cursor: pointer;
+  color: black;
+  border: 1px solid gray;
+  background: transparent;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  font-family: "Nanum Myeongjo", serif;
+  transition: 0.4s;
+}
+.container .main-wrapper .gift .gift-text-wrapper .texts button:hover {
+  background: gray;
+  color: white;
+}
+.container .main-wrapper .gift .gift-text-wrapper .texts button:active {
+  transform: scale(0.98);
+}
+.container .main-wrapper .gift img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+}
+.container .main-wrapper .grid-date {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  height: 5000px;
+}
+.container .main-wrapper .grid-date .gift {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

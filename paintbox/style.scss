@@ -33,7 +33,7 @@ a {
   .header-wrapper {
     z-index: 999;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     width: 100vw;
     height: 144px;
@@ -47,6 +47,7 @@ a {
       justify-content: space-between;
       width: 100vw;
       h1 {
+        cursor: pointer;
         font-family: $font-Aboreto;
         font-size: 3.5rem;
       }
@@ -219,6 +220,72 @@ a {
       img {
         object-fit: cover;
         width: 50%;
+      }
+    }
+    .gift {
+      background: $block-color;
+      display: flex;
+
+      .gift-text-wrapper {
+        background: $block-color-blue;
+        width: 50%;
+        position: relative;
+        .texts {
+          gap: 5.5rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          .small-text {
+            letter-spacing: 0.1rem;
+            font-family: $font-Karla;
+            font-size: 1.2rem;
+          }
+          .desc {
+            width: 60%;
+            font-family: $font-Aboreto;
+            font-size: 2.5rem;
+            letter-spacing: 0.1rem;
+          }
+          button {
+            cursor: pointer;
+            color: black;
+            border: 1px solid gray;
+            background: transparent;
+            width: 200px;
+            height: 50px;
+            font-size: 1rem;
+            letter-spacing: 0.15rem;
+            font-family: $font-Myeongjo;
+            transition: 0.4s;
+            &:hover {
+              background: gray;
+              color: white;
+            }
+            &:active {
+              transform: scale(0.98);
+            }
+          }
+        }
+      }
+      img {
+        object-fit: cover;
+        width: 50%;
+      }
+    }
+    .grid-date {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      height: 5000px;
+      .gift {
+        display: inline-block;
       }
     }
   }
